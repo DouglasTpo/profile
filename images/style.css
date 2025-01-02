@@ -1,17 +1,22 @@
 body {
-   background-color: beige;
+   background-color: rgb(254, 254, 254);
     text-align: center;
     font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Garante que ocupa toda a altura da janela */
+    margin: 0;
 }
 
-img{border-radius: 40%;}
+img {border-radius: 40%;}
 
-.container{
- width: 700px;
- margin: 350px;
+.container {
+ width: 50%;
+ 
 }
 
-.card{
+.card {
     background-color: rgb(109, 145, 231);
     padding: 50px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
@@ -23,3 +28,42 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
+
+.immg {
+    width: 50%;
+    height: 65%;
+
+
+}
+
+
+.list-inline {
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Coloca os itens em linha */
+    gap: 15px; /* Espaço entre os itens */
+  }
+
+  .list-inline li i {
+    font-size: 24px; /* Aumenta o tamanho do ícone */
+    transition: transform 0.3s, color 0.3s; /* Efeito de transição */
+  }
+
+  /* Estiliza os links */
+  .list-inline li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: black; /* Define a cor inicial dos ícones */
+  }
+
+  /* Adiciona um efeito hover */
+  .list-inline li a:hover i {
+    color: #0077ff; /* Cor ao passar o mouse */
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+  }
+
+  .follow {
+    display: flex;
+    justify-content: center;
+
+  }
